@@ -18,13 +18,16 @@ public class RPSTests
 		Assert.That (result, Is.EqualTo (expected));
 	}
 
-	[TestCase("Rock","You chose Rock")]
-	[TestCase("Paper","You chose Paper")]
-	[TestCase("Scissors","You chose Scissors")]
+	[TestCase("Rock","It's a draw")]
+	[TestCase("Paper","Player One Wins")]
+	[TestCase("Scissors","Player Two Wins")]
+	public new string CPUWeapon()
+	{
+		return "Rock";
+	}
 	public void PlayerVsComputer(string playerOneWeapon, string expected)
 	{
 		string result = RPS.OnePlayer (playerOneWeapon);
 		Assert.That (result, Is.EqualTo (expected));
 	}
-
 }

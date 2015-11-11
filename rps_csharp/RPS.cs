@@ -15,12 +15,18 @@ public class RPS
 		string[] weapons = { "Rock", "Paper", "Scissors" };
 		return weapons [rnd.Next (2)];
 	}
-
-
-	public static string TwoPlayer(string playerOneWeapon, string playerTwoWeapon)
+		
+	public static string TwoPlayer(string playerOneWeapon = "", string playerTwoWeapon = "")
 	{
+		if (playerOneWeapon == String.Empty) 
+		{
+			playerOneWeapon = CPUWeapon ();
+		}
+		if (playerTwoWeapon == String.Empty) 
+		{
+			playerTwoWeapon = CPUWeapon ();
+		}
 		return Play (playerOneWeapon, playerTwoWeapon);
-
 	}
 
 	static string Play (string playerOneWeapon, string playerTwoWeapon)
