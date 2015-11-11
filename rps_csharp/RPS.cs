@@ -24,31 +24,17 @@ public class RPS
 
 	static string PlayerOneRock (string playerTwoWeapon)
 	{
-		if (playerTwoWeapon == "Scissors") {
-			return "Player One Wins";
-		}
-		else {
-			return "Player Two Wins";
-		}
+		return (playerTwoWeapon == "Scissors") ? "Player One Wins" : "Player Two Wins";
 	}
 
 	static string PlayerOnePaper (string playerTwoWeapon)
 	{
-		if (playerTwoWeapon == "Rock") {
-			return "Player One Wins";
-		}
-		else {
-			return "Player Two Wins";
-		}
+		return (playerTwoWeapon == "Rock") ? "Player One Wins" : "Player Two Wins";
+
 	}
 
 	static string PlayerOneScissors (string playerTwoWeapon)
 	{
-		if (playerTwoWeapon == "Paper") {
-			return "Player One Wins";
-		}
-		else {
-			return "Player Two Wins";
-		}
+		return (playerTwoWeapon == "Paper") ? "Player One Wins" : "Player Two Wins";
 	}
 }
