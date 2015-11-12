@@ -4,12 +4,6 @@ public class RPS
 {
 	static Random rnd = new Random ();
 
-	public static string OnePlayer(string playerOneWeapon)
-	{
-		string playerTwoWeapon = CPUWeapon();
-		return Play (playerOneWeapon, playerTwoWeapon);
-	}
-
 	static string CPUWeapon()
 	{
 		string[] weapons = { "Rock", "Paper", "Scissors" };
